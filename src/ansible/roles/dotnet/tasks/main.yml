@@ -1,0 +1,7 @@
+- import_role:
+    name: ocha.dotnet-core
+- include_role:
+    name: ocha.dotnet-core
+  become: true
+  dotnet_package: "dotnet-sdk-2.1"
+
