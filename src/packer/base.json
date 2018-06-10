@@ -31,7 +31,6 @@
     }],
     "provisioners": [{
         "type": "ansible",
-        "playbook_file": "../ansible/base.yml",
-        "user": "root"
+        "playbook_file": "../ansible/base.yml"
     }]
 }
