@@ -41,6 +41,8 @@ ansible-galaxy install jnv.unattended-upgrades
 4. Create images:
 
 ```bash
+sudo useradd -m ansibledeploy
+sudo usermod -aG sudo ansibledeploy
 cd src/packer
 export IMAGE_VERSION="version-number"
 packer build imagename.yml
